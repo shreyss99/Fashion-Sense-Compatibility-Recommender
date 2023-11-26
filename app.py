@@ -25,6 +25,12 @@ resnet = tensorflow.keras.Sequential([
 
 
 def extract_image_features(input_path, model):
+    '''
+    Function to extract features from an input uploaded/provided by the user
+    :param input_path: Path where the training image under consideration is stored
+    :param model: The pre-trained ResNet50 model
+    :return: The extracted features from the image in a 2-D numpy array
+    '''
 
     # Get the image from the input path
     img = image.load_img(input_path, target_size=(224, 224))
