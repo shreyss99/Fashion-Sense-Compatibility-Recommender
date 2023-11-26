@@ -61,3 +61,8 @@ for file in tqdm(file_names):
 
 print(np.array(features_list).shape)
 
+
+# Using pickle module, save the features list as embeddings locally for avoiding repeated model training
+pickle.dump(features_list, open('extracted_feature_embeddings.pkl', 'wb'))
+pickle.dump(file_names, open('image_file_names.pkl', 'wb'))
+
