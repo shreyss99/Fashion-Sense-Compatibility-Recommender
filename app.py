@@ -1,9 +1,13 @@
+import os
+import numpy as np
+from numpy.linalg import norm
 import tensorflow
 from tensorflow import keras
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.layers import GlobalMaxPooling2D
 from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
-
+from tqdm import tqdm
+import pickle
 
 # Create a resnet model
 # weights are trained from the ImageNet dataset
