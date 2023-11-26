@@ -20,7 +20,6 @@ resnet = tensorflow.keras.Sequential([
 # print(resnet.summary())
 
 
-# Function to extract features from an input uploaded/provided by the user
 def extract_image_features(input_path, model):
 
     # Get the image from the input path
@@ -44,3 +43,21 @@ def extract_image_features(input_path, model):
     normalized_result = result / norm(result)
 
     return normalized_result
+
+
+# Create a list to store the names of all the training image names
+file_names = []
+
+for image_name in os.listdir('images'):
+    file_names.append(os.path.join('images', image_name))
+
+
+# Create a list for storing the extracted image features
+# Size of this list is (44k, 2048) [Each row contains 2048 features for each image]
+features_list = []
+
+for file in tqdm(file_names):
+    features_list.append(extract_image_features(file, resnet))
+
+print(np.array(features_list).shape)
+
