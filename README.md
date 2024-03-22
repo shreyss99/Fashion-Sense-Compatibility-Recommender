@@ -41,3 +41,15 @@ The images from Kaggle Fashion Product Images Dataset. The inventory is then run
 
 To get around the problems with the small size of the Fashion dataset, the idea of transfer learning is applied. 
 Consequently, we utilize the DeepFashion dataset, which comprises 44,441 garment images, to pre-train the classification models. Using the obtained dataset, the networks are trained and verified. The model's high accuracy, low error, loss, and good f-score are demonstrated by the training results.
+
+
+## Dataset Link
+
+ - [Kaggle Dataset Big size 25 GB](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset)
+ - [Kaggle Dataset Small size 593 MB](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small)
+
+
+## Screenshots
+
+
+
