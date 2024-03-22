@@ -96,3 +96,8 @@ streamlit run main.py
 - **Pillow** - PIL is the Python Imaging Library by Fredrik Lundh and Contributors.
 - **scikit-learn** - Scikit-learn is a free software machine learning library for the Python programming language.
 - **opencv-python** - OpenCV is a huge open-source library for computer vision, machine learning, and image processing.
+
+## Conclusion
+
+In this project, we have presented a data-driven framework for fashion recommendation that generates visually appealing and effective recommendation systems for fashion product images. 
+A two-stage phase is employed in the suggested methodology. Our method first uses a CNN classifier to extract the image's features. It lets users upload any random fashion image from any e-commerce website, and then generates images that are similar to the uploaded image based on the texture and features of the original image. Further research in this area is essential to enable more accurate recommendations and enhance the fashion exploration experience for both direct and indirect consumers.
