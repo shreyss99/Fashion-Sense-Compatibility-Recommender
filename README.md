@@ -27,3 +27,17 @@ The suggested method makes use of Sklearn Nearest Neighbors to produce recommen
 - Its idea is comparable to that of a multilayer perceptron, or a basic neural network, as both use the same forwarding and backward propagation general principle.
 - After pre-processing the data, transfer learning from ResNet50 is used to train the neural networks. To fine-tune the network model to serve the current problem, more layers are added in the final layers, replacing the architecture and weights from ResNet50. The architecture of ResNet50 is depicted in the figure.
 
+
+## Getting the data
+
+The images from Kaggle Fashion Product Images Dataset. The inventory is then run through the neural networks to classify and generate embeddings and the output  is then used to generate recommendations.
+
+### The Figure shows a sample set of inventory data
+
+![dataset-cover](https://user-images.githubusercontent.com/89743011/170478150-9204c659-06a4-48bf-8420-5fee02a3c4d3.png)
+
+
+## Experiment and results
+
+To get around the problems with the small size of the Fashion dataset, the idea of transfer learning is applied. 
+Consequently, we utilize the DeepFashion dataset, which comprises 44,441 garment images, to pre-train the classification models. Using the obtained dataset, the networks are trained and verified. The model's high accuracy, low error, loss, and good f-score are demonstrated by the training results.
